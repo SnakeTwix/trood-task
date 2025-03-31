@@ -1,0 +1,12 @@
+services:
+  customer-support-api:
+    build:
+      target: prod
+      dockerfile: ./Dockerfile
+      context: ./customer-support-api
+    ports:
+      - "1323:1323"
+  nlp-server:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./user-query-nlp

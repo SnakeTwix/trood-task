@@ -20,7 +20,7 @@ def process_user_query(query: UserQuery):
     print(score)
 
     # Handle whatever error there could be, I don't have to do that
-    _ = requests.post('http://localhost:1323/nlp/intent', json={
+    _ = requests.post('http://customer-support-api:1323/nlp/intent', json={
         "confidence": score,
         "intent": intent,
         "conversation_id": query.conversation_id,

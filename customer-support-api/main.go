@@ -127,7 +127,7 @@ func main() {
 }
 
 func sendUserQueryToNLP(query UserQuery) error {
-	url := "http://localhost:8000/intent"
+	url := "http://nlp-server:8000/intent"
 
 	jsonStr, err := json.Marshal(&query)
 	if err != nil {
