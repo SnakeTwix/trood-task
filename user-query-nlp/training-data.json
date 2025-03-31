@@ -1,0 +1,434 @@
+{
+  "password_reset": [
+    {
+      "value": "I forgot my password",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 1.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Can't log in",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 1.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "I need to reset my password",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 1.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Password isn't working",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 1.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Locked out of my account",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 1.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    }
+  ],
+  "order_status": [
+    {
+      "value": "Where is my order?",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 1.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Has my package shipped?",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 1.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "How to learn the tracking number for my order",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 1.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "When will I get my delivery?",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 1.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "What's the status of order #12345",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 1.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    }
+  ],
+  "refund_request": [
+    {
+      "value": "I want a refund",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 1.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Return my purchase",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 1.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "How do I get my money back?",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 1.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "This item needs to be returned",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 1.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Cancel my order",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 1.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    }
+  ],
+  "account_issue": [
+    {
+      "value": "My account is locked",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 1.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Can't access my account",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 1.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Wrong email on file",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 1.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Update my account information",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 1.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Delete my account",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 1.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 0.0
+        }
+      }
+    }
+  ],
+  "billing_inquiry": [
+    {
+      "value": "Why was I charged?",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 1.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Invoice is incorrect",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 1.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Payment didn't go through",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 1.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Where's my receipt?",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 1.0,
+          "technical_issue": 0.0
+        }
+      }
+    },
+    {
+      "value": "Explain these charges",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 1.0,
+          "technical_issue": 0.0
+        }
+      }
+    }
+  ],
+  "technical_issue": [
+    {
+      "value": "The app keeps crashing",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 1.0
+        }
+      }
+    },
+    {
+      "value": "Website won't load",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 1.0
+        }
+      }
+    },
+    {
+      "value": "Error when checking out",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 1.0
+        }
+      }
+    },
+    {
+      "value": "Feature not working",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 1.0
+        }
+      }
+    },
+    {
+      "value": "Page keeps refreshing",
+      "spacyExample": {
+        "cats": {
+          "request_help": 0.0,
+          "password_reset": 0.0,
+          "order_status": 0.0,
+          "refund_request": 0.0,
+          "account_issue": 0.0,
+          "billing_inquiry": 0.0,
+          "technical_issue": 1.0
+        }
+      }
+    }
+  ]
+}
