@@ -41,7 +41,9 @@ def train_ai(nlp: Language, textcat: Callable[[Doc], Doc]):
             nlp.update([example], drop=0.2, losses=losses, sgd=optimizer)
 
 
-def predict_intent(nlp: Language, text: str):
+def intent_score(nlp: Language, text: str):
     doc = nlp(text)
     intents = doc.cats
-    return max(intents, key=intents.get), intents
+    decided_intent = max(intents, key=intents.get)
+
+    return decided_intent, intents.get(decided_intent)

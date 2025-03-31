@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from nlp import get_ai_instance, predict_intent
+from nlp import get_ai_instance, intent_score
 
 nlp = get_ai_instance()
 app = FastAPI()
@@ -11,10 +11,10 @@ class UserQuery(BaseModel):
     conversation_id: int
 
 def process_user_query(query: UserQuery):
-    intent, scores = predict_intent(nlp, query.query)
+    intent, score = intent_score(nlp, query.query)
 
     print(intent)
-    print(scores)
+    print(score)
     # TODO: Send a request to the chat microservice
 
 @app.post("/intent")
