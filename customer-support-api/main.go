@@ -1,7 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"bytes"
+	"encoding/json"
+	"errors"
 	"github.com/labstack/echo/v4"
 	"net/http"
 	"strconv"
@@ -12,6 +14,7 @@ type UserQuery struct {
 	ConversationId int    `param:"conversationId" json:"conversation_id"`
 }
 
+// Knowledge Base
 var answersDB = map[string]string{
 	"request_help":    "I will help you as much as I can!",
 	"password_reset":  "To reset your password, navigate to your profile...",
@@ -22,6 +25,7 @@ var answersDB = map[string]string{
 	"technical_issue": "We're working to fix this issue!",
 }
 
+// The record of a conversation
 var supportMessages = map[int][]string{}
 
 func receiveUserQuery(c echo.Context) error {
@@ -53,8 +57,11 @@ func receiveUserQuery(c echo.Context) error {
 	supportMessages[userQuery.ConversationId] = append(supportMessages[userQuery.ConversationId], userQuery.Query)
 	// In a proper implementation there needs a check whether the conversation has been delegated to a human or not
 	// I see no reason to implement it yet
-	// TODO: Send a request to process query with NLP server
-	fmt.Println(supportMessages, userQuery)
+	err = sendUserQueryToNLP(userQuery)
+	if err != nil {
+		return c.String(http.StatusInternalServerError, err.Error())
+	}
+
 	return c.String(http.StatusOK, "Sent for processing")
 }
 
@@ -117,4 +124,29 @@ func main() {
 	// However this is simpler and demonstrates the idea well enough
 	e.GET("/support/:conversationId", getSupportMessages)
 	e.Logger.Fatal(e.Start(":1323"))
+}
+
+func sendUserQueryToNLP(query UserQuery) error {
+	url := "http://localhost:8000/intent"
+
+	jsonStr, err := json.Marshal(&query)
+	if err != nil {
+		return errors.New("failed to convert to json")
+	}
+
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+	req.Header.Set("Content-Type", "application/json")
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		return errors.New("nlp server error")
+	}
+
+	return nil
 }
